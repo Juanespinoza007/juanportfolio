@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import quadcopter from "../assets/quadcopterPhoto.png";
 import apophis from "../assets/missionApophisPhoto.png";
-import unityIcon from "../assets/unityPhoto.png";
+import unityIcon from "../assets/UnityPhoto.png";
 import pythonIcon from "../assets/pythonIcon.png";
 import AR from "../assets/arInventoryPhoto.png";
 import STK from "../assets/stkPhoto.png";
