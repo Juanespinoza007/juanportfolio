@@ -4,7 +4,7 @@ import {motion} from 'framer-motion';
 
 function Skills() {
 
-  const skill = ["Java", "C", "JavaScript", "TailwindCSS", "Node.js", "MongoDB", "Flask", "HTML", "CSS", "Git", "Express.js", "Pandas", "Figma", "Python", "React"]
+  const skill = ["Python", "C++", "C#", "PyTorch", "TensorFlow", "OpenCV", "ONNX", "Git", "Pandas", "Unity", "SolidWorks", "AutoCAD", "MATLAB", "Ansys STK", "VR/AR Developement"]
 
   return (
     <div className='mx-auto flex flex-wrap gap-2 text-[#FFF5EA] font-webFont max-w-[50rem] px-5 py-7 sm:py-20'>

@@ -23,14 +23,15 @@ const Contact = () => {
       return;
     }
 
-    const serviceId = "service_u6dmakl";
-    const templateId = "template_343424g";
-    const publicKey = "5iDq8QtxGqdjOSI4r";
+    const serviceId = "service_31gom5e";
+    const templateId = "template_k8svwtz";
+    const publicKey = "kE2VoKjg1VOrJOJWN";
 
     const templateParams = {
       from_name: name,
       from_email: email,
-      to_name: "Gabe",
+      to_name: "Juan",
+      to_email: "espinoza.p.juan@gmail.com",
       message: message,
     };
 

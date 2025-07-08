@@ -1,8 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer base {
+  html, body {
+    @apply font-sans;
+  }
+}
 body {
-  background-color: rgb(15, 23, 45);
+  background-color: rgb(0, 0, 0);
 
 }
