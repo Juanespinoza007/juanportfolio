@@ -46,7 +46,7 @@ export default function App() {
       
       <Routes>
         <Route path="/" element={
-          <div className="font-sans flex flex-col gap-y-2 bg-black">
+          <div className="flex flex-col gap-y-2 bg-black">
             
             <Navbar/>
             

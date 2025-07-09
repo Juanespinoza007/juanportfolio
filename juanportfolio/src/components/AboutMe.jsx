@@ -29,7 +29,7 @@ function Section({children}){
 
 function AboutMe() {
   return (
-    <div className="flex flex-col lg:pt-32 lg:flex-row lg:gap-1 lg:justify-center items-center px-0 sm:px-10 gap-5 pt-3">
+    <div className="flex flex-col lg:pt-32 lg:flex-row lg:gap-10 lg:justify-center items-center px-0 sm:px-10 gap-5 pt-3">
       
       <div className=" w-full h-[50vh] lg:w-2/5 xl:w-[33%]">
         <Spline scene="https://prod.spline.design/Nubb2KU3YmwM4gNz/scene.splinecode" />
