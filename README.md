@@ -1,9 +1,9 @@
 # juanespin.com
 
-![image](https://github.com/Juanespinoza007/juanportfolio/juanportfolio/src/comoponents/juanespinPhoto.png)
+![image](https://github.com/Juanespinoza007/juanportfolio/juanportfolio/src/assets/juanespinPhoto.png)
 
 This website was created in a few weeks right after 2025 Graduation.
-Many assets were referenced from a template by [gabepalomin](https://github.com/Juanespinoza007/juanportfolio/commits?author=gabepalomin) at
+Many assets were referenced from a template by [gabepalomin](https://github.com/gabepalomin) at
 [gabepalomino.com](https://gabepalomino.com/#home)
 
 # Creation
