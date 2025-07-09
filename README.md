@@ -1,21 +1,17 @@
-# gabepalomino.com
+# juanespin.com
 
-![image](https://github.com/gabepalomin/gabepalomino.com/assets/124317093/2d15515b-3c6e-47a4-96fd-51fe99e10e08)
+![image](https://github.com/Juanespinoza007/juanportfolio/juanportfolio/src/comoponents/juanespinPhoto.png)
 
-This website was created in a few weeks during the 2024 school semester.
-Feel free to click around and check out the website for yourself!
+This website was created in a few weeks right after 2025 Graduation.
+Many assets were referenced from a template by [gabepalomin](https://github.com/Juanespinoza007/juanportfolio/commits?author=gabepalomin) at
 [gabepalomino.com](https://gabepalomino.com/#home)
 
 # Creation
-I utilized a lot of React.js and Tailwind CSS to create this page. I also deployed
-the website on netlify and own the gabepalomino.com domain on GoDaddy!
-For the 3D rendered objects I utilized SPLINE. It integrated well with React and I had a fun time creating my own 3D models.
-I also utilized Email.js to create my contact-me form.
+React.js and Tailwind CSS were used to create this page. I also deployed
+the website on netlify and own the juanespin.com domain on Porkhub.
+3D rendered objects were integrated using SPLINE.
 
 # Purpose
-I wanted a more personalized page other than my github that displayed my projects while also
-showcasing my skills in full-stack development. I also made sure the website works on all screen sizes
-for anyone to access it through any medium. Nonetheless I utilized my favorite color 'Blue' for the pallete
-of this site.
+I wanted to create a space to showcase all of my projects from both my undergrad in Aerospace and my Masters in Computer Engineering. The theme was chosen based off of my passion for space exploration.
 
 
