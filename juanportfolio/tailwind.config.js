@@ -4,10 +4,10 @@ export default {
   theme: {
     extend: {
       fontFamily: {
+        sans: ["Roboto", 'sans-serif'],
         webFont: ["Lexend Deca", 'sans-serif'],
         space: ["Space Grotesk", 'sans-serif'],
         orbitron: ["Orbitron", 'sans-serif'],
-        sans: ["Roboto", 'sans-serif'],
       },
     },
   },

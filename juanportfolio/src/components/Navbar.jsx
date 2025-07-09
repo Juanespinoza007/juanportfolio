@@ -32,16 +32,16 @@ function Navbar() {
       <Section>
       <ul className={click ? 'nav-list active' : 'nav-list'}>
         <l1 className="navLink">
-          <Link to='home' className='hover:text-[#FFF5EA] cursor-pointer' spy={true} smooth={true} hashSpy={true} onClick={handleClick}>Home</Link>
+          <Link to='home' className='font-sans hover:text-[#FFF5EA] cursor-pointer' spy={true} smooth={true} hashSpy={true} onClick={handleClick}>Home</Link>
         </l1>
         <l1 className="navLink">
-          <Link to='projects' className='hover:text-[#FFF5EA] cursor-pointer'  smooth={true} offset={-10} spy={true} hashSpy={true} onClick={handleClick}>Projects</Link>
+          <Link to='projects' className='font-sans hover:text-[#FFF5EA] cursor-pointer'  smooth={true} offset={-10} spy={true} hashSpy={true} onClick={handleClick}>Projects</Link>
         </l1>
         <l1 className="navLink">
-          <Link to='aboutMe' className='hover:text-[#FFF5EA] cursor-pointer' spy={true} hashSpy={true} smooth={true} offset={0} onClick={handleClick}>About</Link>
+          <Link to='aboutMe' className='font-sans hover:text-[#FFF5EA] cursor-pointer' spy={true} hashSpy={true} smooth={true} offset={0} onClick={handleClick}>About</Link>
         </l1>
         <l1 className="navLink">
-          <Link to='contactMe' className='hover:text-[#FFF5EA] cursor-pointer' spy={true} hashSpy={true} smooth={true} offset={1} onClick={handleClick}>Contact</Link>
+          <Link to='contactMe' className='font-sans hover:text-[#FFF5EA] cursor-pointer' spy={true} hashSpy={true} smooth={true} offset={1} onClick={handleClick}>Contact</Link>
         </l1>
       </ul>
       </Section>

@@ -7,10 +7,31 @@
 @tailwind utilities;
 @layer base {
   html, body {
-    @apply font-sans;
+    @apply font-sans font-medium;
   }
 }
 body {
   background-color: rgb(0, 0, 0);
+}
+@keyframes bounceFade {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  30% {
+    opacity: 1;
+    transform: translateY(20px);
+  }
+  60% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+}
 
+.animate-bounce-fade {
+  animation: bounceFade 3s infinite;
 }

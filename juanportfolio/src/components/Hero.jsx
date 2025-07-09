@@ -5,6 +5,7 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import LinkedIn from "../assets/linkedInIcon.png";
 import gitHub from "../assets/github.png";
+import downArrow from "../assets/downArrow2.png"; // import the arrow
 import "../styles/hero.css";
 function Hero() {
   gsap.registerPlugin(useGSAP);
@@ -41,8 +42,7 @@ function Hero() {
 
       <div
         className="
-          min-h-[100px] flex justify-center items-center
-          font-webFont text-lg whitespace-nowrap
+          min-h-[100px] flex justify-center items-center text-lg whitespace-nowrap
         "
       >
         {/* 
@@ -56,11 +56,18 @@ function Hero() {
 
           {/* rotating titles */}
           <div className="text-wrapper ml-2">
-            <p className="select-none">Im an Aerospace Engineer</p>
+            <p className="select-none">I'm an Aerospace Engineer</p>
             <p className="select-none">Machine Learning Engineer</p>
             <p className="select-none">Computer Vision Engineer</p>
           </div>
         </div>
+      </div>
+      <div className="sticky bottom-20 flex justify-center mt-[160px] relative z-10">
+        <img
+          src={downArrow}
+          alt="Scroll down"
+          className="w-8 h-8 animate-bounce-fade"
+        />
       </div>
     </div>
   );

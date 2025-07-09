@@ -46,7 +46,7 @@ export default function App() {
       
       <Routes>
         <Route path="/" element={
-          <div className="flex flex-col gap-y-2 bg-black">
+          <div className="font-sans flex flex-col gap-y-2 bg-black">
             
             <Navbar/>
             
@@ -63,7 +63,7 @@ export default function App() {
               </Section>
             </div>
             
-            <div className=" text-[#FFF5EA] font-webFont py-24 " id="projects">
+            <div className=" text-[#FFF5EA] py-24 " id="projects">
               <Section>
               <h1 className=" text-4xl text-center ">Projects</h1>
               <div className="w-4/5 mx-auto border-b-2 pt-4 border-b-white/10"></div>
@@ -77,7 +77,7 @@ export default function App() {
               <Projects />
             </div>
             
-            <div className="text-[#FFF5EA]  font-webFont py-24" id="aboutMe">
+            <div className="text-[#FFF5EA] py-24" id="aboutMe">
               <Section>
               <h1 className=" text-4xl text-center ">About Me</h1>
               <div className="w-4/5 mx-auto border-b-2 pt-4 border-b-white/10" />
@@ -85,7 +85,7 @@ export default function App() {
               <AboutMe />
             </div>
             
-            <div className="text-[#FFF5EA]  font-webFont py-24" id="contactMe">
+            <div className="text-[#FFF5EA] py-24" id="contactMe">
               <Section>
               <h1 className="text-4xl text-center">Contact Me</h1>
               <div className="w-4/5 mx-auto border-b-2 pt-4 border-b-white/10" />

@@ -37,7 +37,7 @@ function AboutMe() {
      
       <div className="flex flex-col gap-5 lg:w-1/2 px-10 sm:px-0">
         <Section>
-        <p className="text-center md:order-last xl:text-lg">
+        <p className="font-medium text-center md:order-last xl:text-lg">
           Hello! I'm Juan Espinoza, an Aerospace and AI Engineer passionate
           about leveraging cutting edge AI tools to create novel aerospace solutions 
           in efforts to advance the space exploration industry.<br/>
@@ -63,7 +63,7 @@ function AboutMe() {
             <Section><IoSchoolSharp size={40} /></Section>
             <Section><h2 className="text-2xl font-semibold text-center">B.S. Aerospace<br/>Engineering</h2></Section>
             <Section><p className="text-sm opacity-60">Virginia Tech</p></Section>
-            <Section><p className="text-sm opacity-60"> Focus: Astrodynamics & Numerical Methods</p></Section>
+            <Section><p className="text-sm opacity-60 text-center"> Focus: Astrodynamics & Numerical Methods</p></Section>
           </div>
           
         </div>

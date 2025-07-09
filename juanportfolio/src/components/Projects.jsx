@@ -70,21 +70,21 @@ function Projects() {
     <div className="grid grid-cols-1 pt-10 place-items-center md:grid-cols-2 xl:grid-cols-3 xl:grid-rows-2 xl:gap-y-28 lg:gap-y-20 gap-5 px-5 sm:px-0">
       {/* Quadcopter AI */}
       <Section>
-        <div className=" bg-[#525255] max-w-[450px] h-fit md:rounded-lg">
+        <div className=" bg-[#525255] max-w-[450px] h-fit rounded-lg">
           <h1 className="text-center text-3xl py-4">Quadcopter AI</h1>
           <ReactCardFlip isFlipped={flip} flipDirection="horizontal">
             <img
               src={quadcopter}
-              className="h-[380px] md:rounded-b-lg"
+              className="h-[380px] w-[450px] rounded-b-lg"
               onClick={flipCard}
             />
             <div
               onClick={flipCard}
-              className="h-[380px] bg-[#2a2a2b] md:rounded-b-lg p-7 sm:p-10 flex flex-col justify-center items-center gap-10"
+              className="h-[380px] bg-[#2a2a2b] rounded-b-lg p-7 sm:p-10 flex flex-col justify-center items-center gap-10"
             >
               <div className="flex items-center justify-center gap-10 py-1">
                 {/* <h2 className="text-center text-2xl">Tools:</h2> */}
-                <ul className=" list-none flex items-center justify-center gap-1 sm:gap-5 md:gap-3 lg:gap-5">
+                <ul className=" list-none flex items-center justify-center gap-1 sm:gap-5 md:gap-3 lg:gap-5" >
                   <li className="skill">
                     <img src={unityIcon} className="h-10" />
                     <p className="">Unity</p>
@@ -105,17 +105,17 @@ function Projects() {
       </Section>
       {/* AR Counting app */}
       <Section>
-        <div className=" bg-[#525255] max-w-[450px] h-fit md:rounded-lg">
+        <div className=" bg-[#525255] max-w-[450px] h-fit rounded-lg">
           <h1 className="text-center text-3xl py-4">AR Inventory Counting</h1>
           <ReactCardFlip isFlipped={flip3} flipDirection="horizontal">
             <img
               src={AR}
-              className="h-[380px] w-[450px] md:rounded-b-lg"
+              className="h-[380px] w-[450px] rounded-b-lg"
               onClick={flipCard3}
             />
             <div
               onClick={flipCard3}
-              className="h-[380px] bg-[#94949b]  md:rounded-b-lg p-7 sm:p-10 flex flex-col justify-center items-center gap-10"
+              className="h-[380px] bg-[#94949b]  rounded-b-lg p-7 sm:p-10 flex flex-col justify-center items-center gap-10"
             >
               <div className="flex items-center justify-center gap-10 py-1">
                 <ul className=" list-none flex items-center justify-center gap-1 sm:gap-5 md:gap-2 lg:gap-5">
@@ -148,17 +148,17 @@ function Projects() {
       </Section>
       {/* booked up */}
       <Section>
-        <div className=" bg-[#525255] max-w-[450px] h-fit md:rounded-lg">
+        <div className=" bg-[#525255] max-w-[450px] h-fit rounded-lg">
           <h1 className="text-center text-3xl py-4">Book'd Up</h1>
           <ReactCardFlip isFlipped={flip5} flipDirection="horizontal">
             <img
               src={booked}
-              className="h-[380px] w-[450px] md:rounded-b-lg"
+              className="h-[380px] w-[450px] rounded-b-lg"
               onClick={flipCard5}
             />
             <div
               onClick={flipCard5}
-              className="h-[380px]  bg-[#09316d] md:rounded-b-lg p-7 sm:p-10 flex flex-col justify-center items-center gap-10"
+              className="h-[380px]  bg-[#09316d] rounded-b-lg p-7 sm:p-10 flex flex-col justify-center items-center gap-10"
             >
               <div className="flex items-center justify-center gap-10 py-1">
                 <ul className=" list-none flex items-center justify-center gap-1 sm:gap-5 md:gap-2 lg:gap-5">
@@ -203,23 +203,23 @@ function Projects() {
       </Section>
       {/* Mision Apophis */}
       <Section>
-        <div className=" bg-[#525255] max-w-[450px] h-fit md:rounded-lg">
+        <div className=" bg-[#525255] max-w-[450px] h-fit rounded-lg">
           <h1 className="text-center text-3xl py-4">Mission to Apophis</h1>
           <ReactCardFlip isFlipped={flip2} flipDirection="horizontal">
             <img
               src={apophis}
-              className="h-[380px] w-[450px] md:rounded-b-lg"
+              className="h-[380px] w-[450px] rounded-b-lg"
               onClick={flipCard2}
             />
             <div
               onClick={flipCard2}
-              className="h-[380px] bg-[#222224] md:rounded-b-lg p-10 flex flex-col justify-center items-center gap-10"
+              className="h-[380px] bg-[#222224] rounded-b-lg p-10 flex flex-col justify-center items-center gap-10"
             >
               <div className="flex items-center justify-center gap-10 py-1">
                 <ul className=" list-none flex items-center justify-center gap-5">
                   <li className="skill">
                     <img src={STK} className="h-11" />
-                    <p>STK</p>
+                    <p>Ansys STK</p>
                   </li>
                   <li className="skill">
                     <img src={MATLAB} className="h-11" />
@@ -242,19 +242,19 @@ function Projects() {
       </Section>
       {/* incoming */}
       <Section>
-        <div className=" bg-white/10 text-[#fff5ea93] max-w-[450px] h-fit md:rounded-lg">
+        <div className=" bg-white/10 text-[#fff5ea93] max-w-[450px] h-fit rounded-lg">
           <h1 className="text-center text-3xl py-4">Project incoming...</h1>
           
             <div
               
-              className="h-[380px] md:rounded-b-lg p-7 sm:p-10 flex flex-col justify-center items-center gap-7"
+              className="h-[380px] rounded-b-lg p-7 sm:p-10 flex flex-col justify-center items-center gap-7"
             >
               <div className="flex items-center justify-center gap-10 py-1">
                 <ul className=" list-none flex items-center justify-center gap-1 sm:gap-5 md:gap-2 lg:gap-5">                  
                 </ul>
               </div>
               <p className=" text-center  sm:text-base px-14">
-                Something cool is brerwing, stay tuned!
+                Something cool is brewing, stay tuned!
               </p>
               {/* <a
                 href="https://github.com/Book-dUp/Book-dUpWebsite"

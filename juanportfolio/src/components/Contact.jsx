@@ -24,13 +24,12 @@ const Contact = () => {
     }
 
     const serviceId = "service_31gom5e";
-    const templateId = "template_k8svwtz";
+    const templateId = "template_l4lx86r";
     const publicKey = "kE2VoKjg1VOrJOJWN";
 
     const templateParams = {
       from_name: name,
       from_email: email,
-      to_name: "Juan",
       to_email: "espinoza.p.juan@gmail.com",
       message: message,
     };
@@ -48,13 +47,15 @@ const Contact = () => {
 
     emailjs.send(serviceId, templateId, templateParams, publicKey).then(
       () => {
-        console.log("SUCCESS!");
+        console.log("Message sent successfully!");
+        setNotification("Message sent successfully!");
         setName("");
         setEmail("");
         setMessage("");
       },
       (error) => {
-        console.log("FAILED...", error.text);
+        console.log("Failed to send message!", error.text);
+        setNotification("Failed to send message. Please try again later.");
       }
     );
   };
@@ -83,7 +84,7 @@ const Contact = () => {
       <label>Email:</label>
       <input
         className="border-[#FFF5EA] border-2 px-2 py-1 rounded-md"
-        
+        type="email"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
         />
