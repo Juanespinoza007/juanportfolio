@@ -18,6 +18,7 @@ import jsIcon from "../assets/javascriptIcon.png";
 import htmlIcon from "../assets/htmlIcon.png";
 import mongoIcon from "../assets/mongoIcon.png";
 import booked from "../assets/bookedPhoto.png";
+import STKAI from "../assets/stkaiPhoto.png";
 import { useRef } from "react";
 import { useInView } from "framer-motion";
 
@@ -50,6 +51,8 @@ function Projects() {
   const [flip3, isFlipped3] = useState(false);
   const [flip4, isFlipped4] = useState(false);
   const [flip5, isFlipped5] = useState(false);
+  const [flip6, isFlipped6] = useState(false);
+
   function flipCard() {
     isFlipped(!flip);
   }
@@ -65,17 +68,71 @@ function Projects() {
   function flipCard5() {
     isFlipped5(!flip5);
   }
+  function flipCard6() {
+    isFlipped6(!flip6);
+  }
   // Fix the width for the cards at small screens
   return (
     <div className="grid grid-cols-1 pt-10 place-items-center md:grid-cols-2 xl:grid-cols-3 xl:grid-rows-2 xl:gap-y-28 lg:gap-y-20 gap-5 px-5 sm:px-0">
+      {/* STK AI */}
+      <Section>
+        <div className=" bg-transparent border-[#FFF5EA] border-2 max-w-[450px] h-fit rounded-lg">
+          <h1 className="text-center text-3xl py-4">AI Satellite Reconfiguration</h1>
+          <ReactCardFlip isFlipped={flip6} flipDirection="horizontal">
+            <img
+              src={STKAI}
+              className="h-[380px] w-[450px] border-black border-2 hover:border-[#FFF5EA] duration-300 ease-in-out object-cover object-center rounded-b-lg"
+              onClick={flipCard6}
+            />
+            <div
+              onClick={flipCard6}
+              className="h-[380px] bg-[#2a2a2b] rounded-b-lg p-7 sm:p-10 flex flex-col justify-center items-center gap-5"
+            >
+              <div className="flex items-center justify-center gap-10 py-1">
+                <ul className=" list-none flex items-center justify-center gap-5">
+                  <li className="skill">
+                    <img src={STK} className="h-11" />
+                    <p>Ansys STK</p>
+                  </li>
+                  <li className="skill">
+                    <img src={MATLAB} className="h-11" />
+                    <p>MATLAB</p>
+                  </li>
+                  <li className="skill">
+                    <img src={pythonIcon} className="h-11" />
+                    <p>Python</p>
+                  </li>
+                </ul>
+              </div>
+              <p className=" text-center">
+                An AI-powered simulation that uses reinforcement learning and STK to autonomously reconfigure satellite 
+                constellations in real orbital environments for improved ground coverage and mission responsiveness.
+                </p>
+              <p className=" text-center">
+                In Developement
+              </p>
+              <button
+                onClick={(e) => {
+                  e.stopPropagation();
+                  navigate('/STKAIProj');
+                }}
+                className="w-fit px-3 bg-[#FFF5EA] border-[#FFF5EA] border-2 text-black 
+                rounded-lg text-center py-2 hover:bg-transparent hover:text-[#FFF5EA] duration-300 ease-in-out"
+              >
+                More Details
+              </button>
+            </div>
+          </ReactCardFlip>
+        </div>
+      </Section>
       {/* Quadcopter AI */}
       <Section>
-        <div className=" bg-[#525255] max-w-[450px] h-fit rounded-lg">
+        <div className=" bg-transparent border-[#FFF5EA] border-2 max-w-[450px] h-fit rounded-lg">
           <h1 className="text-center text-3xl py-4">Quadcopter AI</h1>
           <ReactCardFlip isFlipped={flip} flipDirection="horizontal">
             <img
               src={quadcopter}
-              className="h-[380px] w-[450px] rounded-b-lg"
+              className="h-[380px] w-[450px] border-black border-2 hover:border-[#FFF5EA] duration-300 ease-in-out object-cover object-center rounded-b-lg"
               onClick={flipCard}
             />
             <div
@@ -105,12 +162,12 @@ function Projects() {
       </Section>
       {/* AR Counting app */}
       <Section>
-        <div className=" bg-[#525255] max-w-[450px] h-fit rounded-lg">
+        <div className=" bg-transparent border-[#FFF5EA] border-2 max-w-[450px] h-fit rounded-lg">
           <h1 className="text-center text-3xl py-4">AR Inventory Counting</h1>
           <ReactCardFlip isFlipped={flip3} flipDirection="horizontal">
             <img
               src={AR}
-              className="h-[380px] w-[450px] rounded-b-lg"
+              className="h-[380px] w-[450px] border-black border-2 hover:border-[#FFF5EA] duration-300 ease-in-out object-cover object-center rounded-b-lg"
               onClick={flipCard3}
             />
             <div
@@ -133,27 +190,18 @@ function Projects() {
                 A real-time object detection app for the Meta Quest and Apple Vision Pro, enabling efficient retail
                 inventory tracking with a two pass scan while simulating an AR warehouse environment
               </p>
-              <button
-                onClick={(e) => {
-                  e.stopPropagation();
-                  navigate('/page2');
-                }}
-                className="mt-4 bg-white text-black px-4 py-2 rounded-lg hover:opacity-90 transition"
-              >
-                More Details
-              </button>
             </div>
           </ReactCardFlip>
         </div>
       </Section>
       {/* booked up */}
       <Section>
-        <div className=" bg-[#525255] max-w-[450px] h-fit rounded-lg">
+        <div className=" bg-transparent border-[#FFF5EA] border-2 max-w-[450px] h-fit rounded-lg">
           <h1 className="text-center text-3xl py-4">Book'd Up</h1>
           <ReactCardFlip isFlipped={flip5} flipDirection="horizontal">
             <img
               src={booked}
-              className="h-[380px] w-[450px] rounded-b-lg"
+              className="h-[380px] w-[450px] border-black border-2 hover:border-[#FFF5EA] duration-300 ease-in-out object-cover object-center rounded-b-lg"
               onClick={flipCard5}
             />
             <div
@@ -189,7 +237,7 @@ function Projects() {
                 all professionals in the personal care industry (Start-up Dev)
               </p>
               <a
-                href="https://github.com/Book-dUp/Book-dUpWebsite"
+                href="https://bookdup.co"
                 target="_blank"
                 className="bg-[#105fd3] p-1 px-[10px] pt-2 rounded-full hover:bg-opacity-70 cursor-pointer ease-in-out duration-300"
               >
@@ -203,12 +251,12 @@ function Projects() {
       </Section>
       {/* Mision Apophis */}
       <Section>
-        <div className=" bg-[#525255] max-w-[450px] h-fit rounded-lg">
+        <div className=" bg-transparent border-[#FFF5EA] border-2 max-w-[450px] h-fit rounded-lg">
           <h1 className="text-center text-3xl py-4">Mission to Apophis</h1>
           <ReactCardFlip isFlipped={flip2} flipDirection="horizontal">
             <img
               src={apophis}
-              className="h-[380px] w-[450px] rounded-b-lg"
+              className="h-[380px] w-[450px] border-black border-2 hover:border-[#FFF5EA] duration-300 ease-in-out object-cover object-center rounded-b-lg"
               onClick={flipCard2}
             />
             <div
@@ -243,7 +291,7 @@ function Projects() {
       {/* incoming */}
       <Section>
         <div className=" bg-white/10 text-[#fff5ea93] max-w-[450px] h-fit rounded-lg">
-          <h1 className="text-center text-3xl py-4">Project incoming...</h1>
+          <h1 className="text-center text-3xl py-4">More coming...</h1>
           
             <div
               
@@ -254,7 +302,7 @@ function Projects() {
                 </ul>
               </div>
               <p className=" text-center  sm:text-base px-14">
-                Something cool is brewing, stay tuned!
+                There are more ideas brewing, stay tuned!
               </p>
               {/* <a
                 href="https://github.com/Book-dUp/Book-dUpWebsite"

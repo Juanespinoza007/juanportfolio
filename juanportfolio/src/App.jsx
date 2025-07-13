@@ -1,6 +1,6 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import Page2 from "./components/Page2";
+import STKAIProj from "./components/STKAIProj";
 import Hero from "./components/Hero";
 import Projects from "./components/Projects";
 import React from "react";
@@ -124,7 +124,7 @@ export default function App() {
           </div>
         } />
 
-        <Route path="/page2" element={<Page2 />} />
+        <Route path="/STKAIProj" element={<STKAIProj />} />
       </Routes>
     </BrowserRouter>
   );
