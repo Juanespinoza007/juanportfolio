@@ -15,6 +15,7 @@ import {useRef} from 'react';
 import {useInView} from "framer-motion";
 import Navbar from './components/Navbar';
 import Spline from "@splinetool/react-spline";
+import { useEffect } from "react";
 
 
 function Section({children}){
@@ -36,11 +37,24 @@ function Section({children}){
   );
 }
 
-
-
-
-
 export default function App() {
+  useEffect(() => {
+    // Load the gtag script
+    const script = document.createElement("script");
+    script.src = "https://www.googletagmanager.com/gtag/js?id=G-1V9NHGVN69";
+    script.async = true;
+    document.head.appendChild(script);
+
+    // Initialize gtag
+    const inlineScript = document.createElement("script");
+    inlineScript.innerHTML = `
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-1V9NHGVN69');
+    `;
+    document.head.appendChild(inlineScript);
+  }, []);
   return (
     <BrowserRouter>
       
