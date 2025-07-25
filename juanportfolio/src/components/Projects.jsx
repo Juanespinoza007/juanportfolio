@@ -14,15 +14,15 @@ import tailwindIcon from "../assets/tailwindIcon.png";
 import openAiIcon from "../assets/openAiIcon.png";
 import ReactCardFlip from "react-card-flip";
 import { HiOutlineLink } from "react-icons/hi";
-import jsIcon from "../assets/javascriptIcon.png";
-import htmlIcon from "../assets/htmlIcon.png";
 import mongoIcon from "../assets/mongoIcon.png";
 import booked from "../assets/bookedPhoto.png";
 import STKAI from "../assets/stkaiPhoto.png";
 import { useRef } from "react";
 import { useInView } from "framer-motion";
-
-
+import CAD from "../assets/metaQuestHolderPhoto.png";
+import Fusion from "../assets/fusion360Icon.png";
+import SolidWorks from "../assets/solidworksIcon.png";
+import Cura from "../assets/curaIcon.png";
 import "../styles/project.css";
 
 function Section({ children }) {
@@ -52,6 +52,7 @@ function Projects() {
   const [flip4, isFlipped4] = useState(false);
   const [flip5, isFlipped5] = useState(false);
   const [flip6, isFlipped6] = useState(false);
+  const [flip7, isFlipped7] = useState(false);
 
   function flipCard() {
     isFlipped(!flip);
@@ -70,6 +71,9 @@ function Projects() {
   }
   function flipCard6() {
     isFlipped6(!flip6);
+  }
+  function flipCard7() {
+    isFlipped7(!flip7);
   }
   // Fix the width for the cards at small screens
   return (
@@ -284,6 +288,53 @@ function Projects() {
                 compositional data. Modeled Deep Space Network (DSN) communications using Ansys STK, optimizing real-time mission
                 planning.
               </p>
+            </div>
+          </ReactCardFlip>
+        </div>
+      </Section>
+      {/* CAD Projects */}
+      <Section>
+        <div className=" bg-transparent border-[#FFF5EA] border-2 max-w-[450px] h-fit rounded-lg">
+          <h1 className="text-center text-3xl py-4">CAD Projects</h1>
+          <ReactCardFlip isFlipped={flip7} flipDirection="horizontal">
+            <img
+              src={CAD}
+              className="h-[380px] w-[450px] border-black border-2 hover:border-[#FFF5EA] duration-300 ease-in-out object-cover object-center rounded-b-lg"
+              onClick={flipCard7}
+            />
+            <div
+              onClick={flipCard7}
+              className="h-[380px] bg-[#222224] rounded-b-lg p-10 flex flex-col justify-center items-center gap-10"
+            >
+              <div className="flex items-center justify-center gap-10 py-1">
+                <ul className=" list-none flex items-center justify-center gap-5">
+                  <li className="skill">
+                    <img src={Fusion} className="h-11" />
+                    <p>Fusion 360</p>
+                  </li>
+                  <li className="skill">
+                    <img src={SolidWorks} className="h-11" />
+                    <p>SolidWorks</p>
+                  </li>
+                  <li className="skill">
+                    <img src={Cura} className="h-11" />
+                    <p>Cura</p>
+                  </li>
+                </ul>
+              </div>
+              <p className=" text-center">
+                A collection of CAD projects showcasing my skills in 3D modeling and design
+              </p>
+              <button
+                onClick={(e) => {
+                  e.stopPropagation();
+                  navigate('/CADProj');
+                }}
+                className="w-fit px-3 bg-[#FFF5EA] border-[#FFF5EA] border-2 text-black 
+                rounded-lg text-center py-2 hover:bg-transparent hover:text-[#FFF5EA] duration-300 ease-in-out"
+              >
+                See Cad Models
+              </button>
             </div>
           </ReactCardFlip>
         </div>

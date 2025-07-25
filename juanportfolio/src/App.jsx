@@ -16,6 +16,7 @@ import {useInView} from "framer-motion";
 import Navbar from './components/Navbar';
 import Spline from "@splinetool/react-spline";
 import { useEffect } from "react";
+import CADProj from "./components/CADProj";
 
 
 function Section({children}){
@@ -139,6 +140,7 @@ export default function App() {
         } />
 
         <Route path="/STKAIProj" element={<STKAIProj />} />
+        <Route path="/CADProj" element={<CADProj />} />
       </Routes>
     </BrowserRouter>
   );
