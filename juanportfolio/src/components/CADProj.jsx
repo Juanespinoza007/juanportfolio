@@ -1,6 +1,5 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import STKAI from "../assets/stkaiPhoto.png";
 import Section from './Section';
 import CADclip from "../assets/videos/metaquest-holder.mp4";
 import vtcube1 from "../assets/vtcube1.jpg";
@@ -44,20 +43,20 @@ export default function CADProj() {
           />
         </Section>
         <Section delay={0}>
-          <h2 className="text-3xl font-bold text-white mb-2 text-center">Meta Quest 3 Holder</h2>
+          <h2 className="text-3xl font-bold text-white mb-2 text-center">Meta Quest 3 Wall Mount</h2>
           <div className="w-4/5 mx-auto border-b-2 pt-1 mb-6 border-b-white/10"></div>
         </Section>
         <Section delay={0}>
           <div className="bg-white/10 backdrop-blur-md p-6 rounded shadow-md border border-gray-200 text-white">
             <p className="mb-0 text-center">
-              This project is a custom-designed wall-mounted holder for the Meta Quest 3, created to provide quick and convenient access to the headset during frequent use in my AR development projects. The holder allows for seamless charging while keeping the device safely off surfaces, and its sleek, clean design adds a modern touch to the workspace, combining functionality with aesthetics.
+              This project is a custom-designed wall-mounted holder for the Meta Quest 3, created to provide quick and convenient access to the headset during frequent use in my AR development projects. The holder allows for seamless charging while keeping the device safely off surfaces, and its sleek, clean oak wood design adds a modern touch to the workspace, combining functionality with aesthetics.
             </p>
           </div>
         </Section>
         </div>
 
       {/* Virginia Tech Cube Lamp Section */}
-      <div className="py-24">
+      <div className="py-20">
         <Section>
           <div className="relative w-full mb-6 rounded-lg shadow-lg overflow-hidden">
             <img
