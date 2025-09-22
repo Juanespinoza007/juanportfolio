@@ -72,10 +72,10 @@ export default function App() {
 
             <div className="text-[#FFF5EA] py-24" id="aboutMe">
               <Section>
-              <h1 className=" text-4xl text-center ">About Me</h1>
-              <div className="w-4/5 mx-auto border-b-2 pt-4 border-b-white/10" />
+                <h1 className=" text-4xl text-center ">About Me</h1>
+                <div className="w-4/5 mx-auto border-b-2 pt-4 border-b-white/10" />
+                <AboutMe />
               </Section>
-              <AboutMe />
             </div>
             
             <div className=" text-[#FFF5EA] py-24 " id="projects">

@@ -31,7 +31,7 @@ function Hero() {
 
   return (
     <div
-      className="hero mt-48 min-h-screen bg-cover bg-center relative"
+      className="hero min-h-screen bg-cover bg-center relative"
       style={{
         backgroundImage: `url('https://d2pn8kiwq2w21t.cloudfront.net/original_images/jpegPIA14293.jpg')`,
       }}
@@ -70,10 +70,12 @@ function Hero() {
         <p className="text-[#FFF5EA] text-lg">
           Pioneering the space exploration and defense industry with AI
         </p>
+      </div>
+      <div className="absolute bottom-10 w-full flex justify-center">
         <img
           src={downArrow}
           alt="Scroll down"
-          className="w-8 h-8 animate-bounce-fade mt-4"
+          className="w-8 h-8 animate-bounce-fade"
         />
       </div>
     </div>
