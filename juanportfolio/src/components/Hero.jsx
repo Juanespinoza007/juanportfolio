@@ -36,7 +36,7 @@ function Hero() {
         backgroundImage: `url('https://d2pn8kiwq2w21t.cloudfront.net/original_images/jpegPIA14293.jpg')`,
       }}
     >
-      <div className="absolute bottom-0 left-0 p-8">
+      <div className="absolute bottom-1/3 left-0 p-8">
         <h1
           className="
             text-5xl text-[#FFF5EA] font-semi-bold font-orbitron
@@ -67,12 +67,13 @@ function Hero() {
             </div>
           </div>
         </div>
-      </div>
-      <div className="sticky bottom-20 flex justify-center mt-[160px] relative z-10">
+        <p className="text-[#FFF5EA] text-lg">
+          Pioneering the space exploration and defense industry with AI
+        </p>
         <img
           src={downArrow}
           alt="Scroll down"
-          className="w-8 h-8 animate-bounce-fade"
+          className="w-8 h-8 animate-bounce-fade mt-4"
         />
       </div>
     </div>
