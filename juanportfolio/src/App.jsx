@@ -70,7 +70,7 @@ export default function App() {
               <Hero />
             </div>
 
-            <div className="text-[#FFF5EA] py-24" id="aboutMe">
+            <div className="text-[#FFF5EA] pb-24" id="aboutMe">
               <Section>
                 <h1 className=" text-4xl text-center ">About Me</h1>
                 <div className="w-4/5 mx-auto border-b-2 pt-4 border-b-white/10" />
@@ -78,13 +78,10 @@ export default function App() {
               </Section>
             </div>
             
-            <div className=" text-[#FFF5EA] py-24 " id="projects">
+            <div className=" text-[#FFF5EA] pt-4 py-24 " id="projects">
               <Section>
               <h1 className=" text-4xl text-center ">Projects</h1>
               <div className="w-4/5 mx-auto border-b-2 pt-4 border-b-white/10"></div>
-              <p className="text-center pt-3 px-6 sm:px-0">
-                A few of my recent projects to showcase my skills.
-              </p>
               </Section>
             <div>
                 <Skills/>

@@ -36,20 +36,17 @@ function Hero() {
         backgroundImage: `url('https://d2pn8kiwq2w21t.cloudfront.net/original_images/jpegPIA14293.jpg')`,
       }}
     >
-      <div className="absolute bottom-1/3 left-0 p-8">
-        <h1
-          className="
-            text-5xl text-[#FFF5EA] font-semi-bold font-orbitron
-            md:text-[4rem] xl:text-[5rem]
-          "
-        >
-          Juan Espinoza
+      <div className="absolute bottom-1/3 left-0 px-4 p-8 max-w-[75%] text-left left-[12.5%] pl-0">
+        <p className="text-[#FFF5EA] font-semibold text-3xl sm:text-4xl leading-tight">
+          Hi,
+        </p>
+        <h1 className="text-[#FFF5EA] font-semibold md:text-[4rem] xl:text-[5rem] break-words leading-tight">
+          <span className="text-3xl sm:text-4xl md:text-[3rem]">I'm </span>
+          <span className="font-orbitron text-3xl sm:text-4xl md:text-[3rem]">Juan Espinoza</span>
         </h1>
 
         <div
-          className="
-            min-h-[100px] text-lg whitespace-nowrap
-          "
+          className="min-h-[10px] text-3xl"
         >
           {/*
             container is now our inline-flex wrapper so the GSAP scope
@@ -57,21 +54,20 @@ function Hero() {
           */}
           <div
             ref={container}
-            className="container inline-flex items-center"
+            className="container inline-flex flex-wrap text-[#CC5500]"
           >
             {/* rotating titles */}
-            <div className="text-wrapper ml-2">
-              <p className="select-none">I'm an Aerospace Engineer</p>
-              <p className="select-none">Machine Learning Engineer</p>
-              <p className="select-none">Computer Vision Engineer</p>
+            <div className="text-wrapper">
+              <p className="select-none">Aerospace Engineer</p>
+              <p className="select-none">AI Engineer</p>
             </div>
           </div>
         </div>
-        <p className="text-[#FFF5EA] text-lg">
-          Pioneering the space exploration and defense industry with AI
+        <p className="text-[#FFF5EA] text-lg whitespace-normal break-words w-full sm:max-w-[80%] md:max-w-[60%] mt-4">
+          Pioneering the space exploration and defense industry with <span className="text-[#CC5500] font-bold">AI</span>.
         </p>
       </div>
-      <div className="absolute bottom-10 w-full flex justify-center">
+      <div className="absolute bottom-32 w-full flex justify-center">
         <img
           src={downArrow}
           alt="Scroll down"
