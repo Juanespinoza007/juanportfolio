@@ -14,7 +14,6 @@ import { MdMailOutline } from "react-icons/md";
 import {useRef} from 'react';
 import {useInView} from "framer-motion";
 import Navbar from './components/Navbar';
-import Spline from "@splinetool/react-spline";
 import { useEffect } from "react";
 import CADProj from "./components/CADProj";
 
@@ -68,13 +67,14 @@ export default function App() {
             
             <div className="wrapper" id="home">
               
-                <Spline
-                  className="spline"
-                  scene="https://prod.spline.design/fRo2xPG3RyaqDbVh/scene.splinecode"
-                />
-              
-              <Section>
               <Hero />
+            </div>
+
+            <div className="text-[#FFF5EA] py-24" id="aboutMe">
+              <Section>
+                <h1 className=" text-4xl text-center ">About Me</h1>
+                <div className="w-4/5 mx-auto border-b-2 pt-4 border-b-white/10" />
+                <AboutMe />
               </Section>
             </div>
             
@@ -90,14 +90,6 @@ export default function App() {
                 <Skills/>
             </div>
               <Projects />
-            </div>
-            
-            <div className="text-[#FFF5EA] py-24" id="aboutMe">
-              <Section>
-              <h1 className=" text-4xl text-center ">About Me</h1>
-              <div className="w-4/5 mx-auto border-b-2 pt-4 border-b-white/10" />
-              </Section>
-              <AboutMe />
             </div>
             
             <div className="text-[#FFF5EA] py-24" id="contactMe">

@@ -30,39 +30,48 @@ function Hero() {
   );
 
   return (
-    <div className="hero mt-48">
-      <h1
-        className="
-          text-5xl text-[#FFF5EA] font-semi-bold font-orbitron pt-10 text-center
-          md:text-[4rem] md:pt-16 xl:text-[5rem] xl:pt-20
-        "
-      >
-        Juan Espinoza
-      </h1>
-
-      <div
-        className="
-          min-h-[100px] flex justify-center items-center text-lg whitespace-nowrap
-        "
-      >
-        {/* 
-          container is now our inline-flex wrapper so the GSAP scope
-          stays the same but moves the entire group left/right 
-        */}
-        <div
-          ref={container}
-          className="container inline-flex items-center"
+    <div
+      className="hero min-h-screen bg-cover bg-center relative"
+      style={{
+        backgroundImage: `url('https://d2pn8kiwq2w21t.cloudfront.net/original_images/jpegPIA14293.jpg')`,
+      }}
+    >
+      <div className="absolute bottom-1/3 left-0 p-8">
+        <h1
+          className="
+            text-5xl text-[#FFF5EA] font-semi-bold font-orbitron
+            md:text-[4rem] xl:text-[5rem]
+          "
         >
+          Juan Espinoza
+        </h1>
 
-          {/* rotating titles */}
-          <div className="text-wrapper ml-2">
-            <p className="select-none">I'm an Aerospace Engineer</p>
-            <p className="select-none">Machine Learning Engineer</p>
-            <p className="select-none">Computer Vision Engineer</p>
+        <div
+          className="
+            min-h-[100px] text-lg whitespace-nowrap
+          "
+        >
+          {/*
+            container is now our inline-flex wrapper so the GSAP scope
+            stays the same but moves the entire group left/right
+          */}
+          <div
+            ref={container}
+            className="container inline-flex items-center"
+          >
+            {/* rotating titles */}
+            <div className="text-wrapper ml-2">
+              <p className="select-none">I'm an Aerospace Engineer</p>
+              <p className="select-none">Machine Learning Engineer</p>
+              <p className="select-none">Computer Vision Engineer</p>
+            </div>
           </div>
         </div>
+        <p className="text-[#FFF5EA] text-lg">
+          Pioneering the space exploration and defense industry with AI
+        </p>
       </div>
-      <div className="sticky bottom-20 flex justify-center mt-[160px] relative z-10">
+      <div className="absolute bottom-10 w-full flex justify-center">
         <img
           src={downArrow}
           alt="Scroll down"
