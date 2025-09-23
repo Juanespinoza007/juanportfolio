@@ -12,7 +12,7 @@ function Skills() {
       {skill.map((tech, i)=>(
          <motion.div
          initial="hidden"
-         className='grow select-none rounded-lg bg-white/5 px-6 py-2 text-center'
+         className='grow select-none rounded-lg bg-[#CC5500]/50 px-6 py-2 text-center'
          whileInView="visible"
          viewport={{ once: true }}
          transition={{ duration: 0.3, delay: i*0.2 }}

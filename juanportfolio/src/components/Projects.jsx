@@ -80,12 +80,12 @@ function Projects() {
     <div className="grid grid-cols-1 pt-10 place-items-center md:grid-cols-2 xl:grid-cols-3 xl:grid-rows-2 xl:gap-y-28 lg:gap-y-20 gap-5 px-5 sm:px-0">
       {/* STK AI */}
       <Section>
-        <div className=" bg-transparent border-[#FFF5EA] border-2 max-w-[450px] h-fit rounded-lg">
+        <div className=" bg-transparent border-black border-2 max-w-[450px] h-fit rounded-lg">
           <h1 className="text-center text-3xl py-4">AI Satellite Reconfiguration</h1>
           <ReactCardFlip isFlipped={flip6} flipDirection="horizontal">
             <img
               src={STKAI}
-              className="h-[380px] w-[450px] border-black border-2 hover:border-[#FFF5EA] duration-300 ease-in-out object-cover object-center rounded-b-lg"
+              className="h-[380px] w-[450px] border-black border-2 hover:border-[#CC5500] duration-300 ease-in-out object-cover object-center rounded-b-lg"
               onClick={flipCard6}
             />
             <div
@@ -131,12 +131,12 @@ function Projects() {
       </Section>
       {/* Quadcopter AI */}
       <Section>
-        <div className=" bg-transparent border-[#FFF5EA] border-2 max-w-[450px] h-fit rounded-lg">
+        <div className=" bg-transparent border-black border-2 max-w-[450px] h-fit rounded-lg">
           <h1 className="text-center text-3xl py-4">Quadcopter AI</h1>
           <ReactCardFlip isFlipped={flip} flipDirection="horizontal">
             <img
               src={quadcopter}
-              className="h-[380px] w-[450px] border-black border-2 hover:border-[#FFF5EA] duration-300 ease-in-out object-cover object-center rounded-b-lg"
+              className="h-[380px] w-[450px] border-black border-2 hover:border-[#CC5500] duration-300 ease-in-out object-cover object-center rounded-b-lg"
               onClick={flipCard}
             />
             <div
@@ -166,12 +166,12 @@ function Projects() {
       </Section>
       {/* AR Counting app */}
       <Section>
-        <div className=" bg-transparent border-[#FFF5EA] border-2 max-w-[450px] h-fit rounded-lg">
+        <div className=" bg-transparent border-black border-2 max-w-[450px] h-fit rounded-lg">
           <h1 className="text-center text-3xl py-4">AR Inventory Counting</h1>
           <ReactCardFlip isFlipped={flip3} flipDirection="horizontal">
             <img
               src={AR}
-              className="h-[380px] w-[450px] border-black border-2 hover:border-[#FFF5EA] duration-300 ease-in-out object-cover object-center rounded-b-lg"
+              className="h-[380px] w-[450px] border-black border-2 hover:border-[#CC5500] duration-300 ease-in-out object-cover object-center rounded-b-lg"
               onClick={flipCard3}
             />
             <div
@@ -200,12 +200,12 @@ function Projects() {
       </Section>
       {/* booked up */}
       <Section>
-        <div className=" bg-transparent border-[#FFF5EA] border-2 max-w-[450px] h-fit rounded-lg">
+        <div className=" bg-transparent border-black border-2 max-w-[450px] h-fit rounded-lg">
           <h1 className="text-center text-3xl py-4">Book'd Up</h1>
           <ReactCardFlip isFlipped={flip5} flipDirection="horizontal">
             <img
               src={booked}
-              className="h-[380px] w-[450px] border-black border-2 hover:border-[#FFF5EA] duration-300 ease-in-out object-cover object-center rounded-b-lg"
+              className="h-[380px] w-[450px] border-black border-2 hover:border-[#CC5500] duration-300 ease-in-out object-cover object-center rounded-b-lg"
               onClick={flipCard5}
             />
             <div
@@ -255,12 +255,12 @@ function Projects() {
       </Section>
       {/* Mision Apophis */}
       <Section>
-        <div className=" bg-transparent border-[#FFF5EA] border-2 max-w-[450px] h-fit rounded-lg">
+        <div className=" bg-transparent border-black border-2 max-w-[450px] h-fit rounded-lg">
           <h1 className="text-center text-3xl py-4">Mission to Apophis</h1>
           <ReactCardFlip isFlipped={flip2} flipDirection="horizontal">
             <img
               src={apophis}
-              className="h-[380px] w-[450px] border-black border-2 hover:border-[#FFF5EA] duration-300 ease-in-out object-cover object-center rounded-b-lg"
+              className="h-[380px] w-[450px] border-black border-2 hover:border-[#CC5500] duration-300 ease-in-out object-cover object-center rounded-b-lg"
               onClick={flipCard2}
             />
             <div
@@ -294,12 +294,12 @@ function Projects() {
       </Section>
       {/* CAD Projects */}
       <Section>
-        <div className=" bg-transparent border-[#FFF5EA] border-2 max-w-[450px] h-fit rounded-lg">
+        <div className=" bg-transparent border-black border-2 max-w-[450px] h-fit rounded-lg">
           <h1 className="text-center text-3xl py-4">CAD Projects</h1>
           <ReactCardFlip isFlipped={flip7} flipDirection="horizontal">
             <img
               src={CAD}
-              className="h-[380px] w-[450px] border-black border-2 hover:border-[#FFF5EA] duration-300 ease-in-out object-cover object-center rounded-b-lg"
+              className="h-[380px] w-[450px] border-black border-2 hover:border-[#CC5500] duration-300 ease-in-out object-cover object-center rounded-b-lg"
               onClick={flipCard7}
             />
             <div
