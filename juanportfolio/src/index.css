@@ -11,12 +11,7 @@
   }
 }
 body {
-  background-image: url('./assets/spaceBackground.jpg');
-  background-repeat: repeat-y;
-  background-position: top;
   background-color: #000000;
-  background-size: contain;
-  background-position: center;
 }
 @keyframes bounceFade {
   0% {
