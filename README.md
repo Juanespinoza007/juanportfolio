@@ -1,6 +1,6 @@
 # juanespin.com
 
-<img width="1160" alt="juanespinPhoto" src="https://github.com/user-attachments/assets/94687d99-29dc-410a-b634-267b4628e2b9" />
+<img width="1160" alt="juanespinPhoto" src="https://github.com/Juanespinoza007/juanportfolio/blob/main/juanportfolio/src/assets/juanespinPhoto.png?raw=true" />
 
 This website was created in a few weeks right after 2025 Graduation.
 Many assets were referenced from a template by [gabepalomin](https://github.com/gabepalomin) at
