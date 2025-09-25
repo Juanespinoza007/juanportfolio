@@ -1,46 +1,48 @@
 import React from 'react'
-import {motion} from 'framer-motion';
-
+import { motion } from 'framer-motion';
 
 function Skills() {
 
-  const skill = ["Python", "C++", "C#", "PyTorch", "TensorFlow", "OpenCV", "ONNX", "Git", "Pandas", "Unity", "SolidWorks", "AutoCAD", "MATLAB", "Ansys STK", "VR/AR Developement"]
+  const skills = ["Astrodynamics", "Orbital Mechanics", "Control Systems", "Hypersonic Flow", "Avionics", "3D Modeling", "Simulation", "Deep Learning", "Reinforcement Learning", "Computer Vision", "AR/VR Development"]
+  const tools = ["SolidWorks", "Fusion 360", "Siemens NX", "MATLAB", "Ansys STK", "Python", "C++", "C#", "PyTorch", "TensorFlow", "OpenCV", "ONNX", "Git", "Pandas", "Unity"]
 
   return (
     <div className='mx-auto flex flex-wrap gap-2 text-[#FFF5EA] max-w-[50rem] px-5 py-7 sm:py-20'>
-      <h2 className='w-full'>Technologies:</h2>
-      {skill.map((tech, i)=>(
-         <motion.div
-         initial="hidden"
-         className='grow select-none rounded-lg bg-[#CC5500]/50 px-6 py-2 text-center'
-         whileInView="visible"
-         viewport={{ once: true }}
-         transition={{ duration: 0.3, delay: i*0.2 }}
-         variants={{
-           visible: { opacity: 1, translateY:0 },
-           hidden: { opacity: 0, translateY:100}
-         }}
-       >
-         {tech}
-       </motion.div>
+      <h2 className='w-full'>Skills:</h2>
+      {skills.map((s, i) => (
+        <motion.div
+          key={s}
+          initial="hidden"
+          className='grow select-none rounded-lg bg-[#CC5500]/50 px-6 py-2 text-center'
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ duration: 0.3, delay: i * 0.2 }}
+          variants={{
+            visible: { opacity: 1, translateY: 0 },
+            hidden: { opacity: 0, translateY: 100 }
+          }}
+        >
+          {s}
+        </motion.div>
       ))}
-        {/* <h2 className='w-full'>Technologies:</h2>
-        <div className='grow select-none rounded-lg bg-white/5 px-6 py-2 text-center'>Java</div>
-        <div className='grow select-none rounded-lg bg-white/5 px-6 py-2 text-center'>C</div>
-        <div className='grow select-none rounded-lg bg-white/5 px-6 py-2 text-center'>JavaScript</div>
-        <div className='grow select-none rounded-lg bg-white/5 px-6 py-2 text-center'>TailwindCSS</div>
-        <div className='grow select-none rounded-lg bg-white/5 px-6 py-2 text-center'>Node.js</div>
-        <div className='grow select-none rounded-lg bg-white/5 px-6 py-2 text-center'>MongoDB</div>
-        <div className='grow select-none rounded-lg bg-white/5 px-6 py-2 text-center'>Flask</div>
-        <div className='grow select-none rounded-lg bg-white/5 px-6 py-2 text-center'>HTML</div>
-        <div className='grow select-none rounded-lg bg-white/5 px-6 py-2 text-center'>CSS</div>
-        <div className='grow select-none rounded-lg bg-white/5 px-6 py-2 text-center'>Git</div>
-        <div className='grow select-none rounded-lg bg-white/5 px-6 py-2 text-center'>Express.js</div>
-        <div className='grow select-none rounded-lg bg-white/5 px-6 py-2 text-center'>Pandas</div>
-        <div className='grow select-none rounded-lg bg-white/5 px-6 py-2 text-center'>Figma</div>
-        <div className='grow select-none rounded-lg bg-white/5 px-6 py-2 text-center'>Python</div>
-        <div className='grow select-none rounded-lg bg-white/5 px-6 py-2 text-center w-full'>React</div>
-         */}
+
+      <h2 className='w-full mt-8'>Tools:</h2>
+      {tools.map((t, i) => (
+        <motion.div
+          key={t}
+          initial="hidden"
+          className='grow select-none rounded-lg bg-[#CC5500]/50 px-6 py-2 text-center'
+          whileInView="visible"
+          viewport={{ once: true }}
+          transition={{ duration: 0.3, delay: i * 0.2 }}
+          variants={{
+            visible: { opacity: 1, translateY: 0 },
+            hidden: { opacity: 0, translateY: 100 }
+          }}
+        >
+          {t}
+        </motion.div>
+      ))}
     </div>
   )
 }
