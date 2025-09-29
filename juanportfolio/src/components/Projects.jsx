@@ -295,7 +295,7 @@ function Projects() {
       {/* CAD Projects */}
       <Section>
         <div className=" bg-transparent border-black border-2 max-w-[450px] h-fit rounded-lg">
-          <h1 className="text-center text-3xl py-4">CAD Projects</h1>
+          <h1 className="text-center text-3xl py-4">CAD Models</h1>
           <ReactCardFlip isFlipped={flip7} flipDirection="horizontal">
             <img
               src={CAD}
@@ -353,7 +353,7 @@ function Projects() {
                 </ul>
               </div>
               <p className=" text-center  sm:text-base px-14">
-                There are more ideas brewing, stay tuned!
+                More projects being added. Check back soon.
               </p>
               {/* <a
                 href="https://github.com/Book-dUp/Book-dUpWebsite"

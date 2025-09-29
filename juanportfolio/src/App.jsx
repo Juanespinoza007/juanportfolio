@@ -124,7 +124,9 @@ export default function App() {
               
               </Section>
             </div>
-            
+            {/* <div className="text-center text-[#FFF5EA] pb-8">
+              Made with React and TailwindCSS by Juan Espinoza
+            </div> */}
           </div>
         } />
 
