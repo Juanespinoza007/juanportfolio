@@ -16,6 +16,7 @@ import {useInView} from "framer-motion";
 import Navbar from './components/Navbar';
 import { useEffect } from "react";
 import CADProj from "./components/CADProj";
+import ApophisProj from "./components/ApophisProj";
 
 
 function Section({children}){
@@ -132,6 +133,7 @@ export default function App() {
 
         <Route path="/STKAIProj" element={<STKAIProj />} />
         <Route path="/CADProj" element={<CADProj />} />
+        <Route path="/ApophisProj" element={<ApophisProj />} />
       </Routes>
     </BrowserRouter>
   );

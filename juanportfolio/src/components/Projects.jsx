@@ -129,6 +129,7 @@ function Projects() {
           </ReactCardFlip>
         </div>
       </Section>
+
       {/* Quadcopter AI */}
       <Section>
         <div className=" bg-transparent border-black border-2 max-w-[450px] h-fit rounded-lg">
@@ -164,6 +165,7 @@ function Projects() {
           </ReactCardFlip>
         </div>
       </Section>
+
       {/* AR Counting app */}
       <Section>
         <div className=" bg-transparent border-black border-2 max-w-[450px] h-fit rounded-lg">
@@ -198,6 +200,58 @@ function Projects() {
           </ReactCardFlip>
         </div>
       </Section>
+
+      {/* Mision Apophis */}
+      <Section>
+        <div className=" bg-transparent border-black border-2 max-w-[450px] h-fit rounded-lg">
+          <h1 className="text-center text-3xl py-4">Mission to Asteroid Apophis</h1>
+          <ReactCardFlip isFlipped={flip2} flipDirection="horizontal">
+            <img
+              src={apophis}
+              className="h-[380px] w-[450px] border-black border-2 hover:border-[#CC5500] duration-300 ease-in-out object-cover object-center rounded-b-lg"
+              onClick={flipCard2}
+            />
+            <div
+              onClick={flipCard2}
+              className="h-[380px] bg-[#222224] rounded-b-lg p-10 flex flex-col justify-center items-center gap-10"
+            >
+              <div className="flex items-center justify-center gap-10 py-1">
+                <ul className=" list-none flex items-center justify-center gap-5">
+                  <li className="skill">
+                    <img src={STK} className="h-11" />
+                    <p>Ansys STK</p>
+                  </li>
+                  <li className="skill">
+                    <img src={MATLAB} className="h-11" />
+                    <p>MATLAB</p>
+                  </li>
+                  <li className="skill">
+                    <img src={pythonIcon} className="h-11" />
+                    <p>Python</p>
+                  </li>
+                </ul>
+              </div>
+              <p className=" text-center">
+                Orbital trajectory design for a spacecraft mission to asteroid Apophis, focused on gathering seismic and
+                compositional data. Modeled Deep Space Network (DSN) communications using Ansys STK, optimizing real-time mission
+                planning.
+              </p>
+              <button
+                onClick={(e) => {
+                  e.stopPropagation();
+                  navigate('/ApophisProj');
+                }}
+                className="w-fit px-3 bg-[#FFF5EA] border-[#FFF5EA] border-2 text-black 
+                rounded-lg text-center py-2 hover:bg-transparent hover:text-[#FFF5EA] duration-300 ease-in-out"
+              >
+                More Details
+              </button>
+
+            </div>
+          </ReactCardFlip>
+        </div>
+      </Section>
+
       {/* booked up */}
       <Section>
         <div className=" bg-transparent border-black border-2 max-w-[450px] h-fit rounded-lg">
@@ -253,45 +307,7 @@ function Projects() {
           </ReactCardFlip>
         </div>
       </Section>
-      {/* Mision Apophis */}
-      <Section>
-        <div className=" bg-transparent border-black border-2 max-w-[450px] h-fit rounded-lg">
-          <h1 className="text-center text-3xl py-4">Mission to Apophis</h1>
-          <ReactCardFlip isFlipped={flip2} flipDirection="horizontal">
-            <img
-              src={apophis}
-              className="h-[380px] w-[450px] border-black border-2 hover:border-[#CC5500] duration-300 ease-in-out object-cover object-center rounded-b-lg"
-              onClick={flipCard2}
-            />
-            <div
-              onClick={flipCard2}
-              className="h-[380px] bg-[#222224] rounded-b-lg p-10 flex flex-col justify-center items-center gap-10"
-            >
-              <div className="flex items-center justify-center gap-10 py-1">
-                <ul className=" list-none flex items-center justify-center gap-5">
-                  <li className="skill">
-                    <img src={STK} className="h-11" />
-                    <p>Ansys STK</p>
-                  </li>
-                  <li className="skill">
-                    <img src={MATLAB} className="h-11" />
-                    <p>MATLAB</p>
-                  </li>
-                  <li className="skill">
-                    <img src={pythonIcon} className="h-11" />
-                    <p>Python</p>
-                  </li>
-                </ul>
-              </div>
-              <p className=" text-center">
-                Orbital trajectory design for a spacecraft mission to asteroid Apophis, focused on gathering seismic and
-                compositional data. Modeled Deep Space Network (DSN) communications using Ansys STK, optimizing real-time mission
-                planning.
-              </p>
-            </div>
-          </ReactCardFlip>
-        </div>
-      </Section>
+
       {/* CAD Projects */}
       <Section>
         <div className=" bg-transparent border-black border-2 max-w-[450px] h-fit rounded-lg">
