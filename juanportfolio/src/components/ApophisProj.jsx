@@ -28,6 +28,7 @@ export default function CADProj() {
         &lt; Back
       </button>
 
+      <div className="max-w-4xl mx-auto">
       {/* Project Section */}
       <div className="py-0">
         <Section>
@@ -96,6 +97,7 @@ export default function CADProj() {
           </div>
         </Section>
       </div>
+    </div>
     </div>
   );
 }
